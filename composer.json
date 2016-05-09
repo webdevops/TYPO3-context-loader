@@ -1,0 +1,25 @@
+{
+    "name": "webdevops/context-loader",
+    "type": "typo3-cms-extension",
+    "description": "Context configuration loader for TYPO3 (TYPO3_CONTEXT)",
+    "homepage": "https://github.com/webdevops/TYPO3-context-loader",
+    "support": {
+        "issues": "https://github.com/webdevops/TYPO3-context-loader/issues"
+    },
+    "license": ["GPL-2.0+"],
+    "keywords": ["TYPO3 CMS"],
+    "version": "1.0.0",
+    "autoload": {
+        "psr-4": {
+            "WebDevOps\\ContextLoader\\": "Classes/"
+        }
+    },
+    "require": {
+        "php": ">=5.3.0",
+        "typo3/cms-core": ">=6.2.0,<8.0"
+    },
+    "replace": {
+        "context-loader": "self.version",
+        "typo3-ter/context-loader": "self.version"
+    }
+}

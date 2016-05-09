@@ -239,9 +239,6 @@ class ContextLoader
     {
         // Load config file
         if (file_exists($configurationFile)) {
-            // Keep this variable for automatic injection into requried files!
-            $contextLoader = $this;
-
             // Load configuration file
             $retConf = require $configurationFile;
 
